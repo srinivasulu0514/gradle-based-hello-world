@@ -17,7 +17,7 @@ public class TestGreeter {
    {
       g.setName("World");
       assertEquals(g.getName(),"World");
-      assertEquals(g.sayHello(),"Hello¥ World!");
+      assertEquals(g.sayHello(),"Hello World!");
    }
    
    @Test
