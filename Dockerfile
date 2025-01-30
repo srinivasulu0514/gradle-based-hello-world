@@ -10,7 +10,8 @@ RUN apt-get update && apt-get install -y gradle
 # Copy the project files
 COPY . .
 
+RUN gradle dist --exclude-task test
+
 # Build the project using Gradle
 RUN gradle build
 
-RUN gradle test
