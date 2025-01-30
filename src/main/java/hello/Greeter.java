@@ -38,7 +38,7 @@ public class Greeter {
 
     {
 
-       return "Helloé¥!";
+       return "Hello!";
 
     }
 
