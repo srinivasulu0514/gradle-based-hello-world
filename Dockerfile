@@ -13,8 +13,4 @@ COPY . .
 # Build the project using Gradle
 RUN gradle build
 
-# Expose port (if your application runs on a specific port, e.g., 8080)
-EXPOSE 8080
-
-# Set the entry point to run the Java application
-CMD ["java", "-jar", "build/libs/<your-app>.jar"]
+RUN gradle test
