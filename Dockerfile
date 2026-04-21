@@ -2,7 +2,7 @@
 FROM openjdk:11
 
 # Set the working directory inside the container
-WORKDIR /app
+WORKDIR /apppp
 
 # Install Gradle
 RUN apt-get update && apt-get install -y gradle
@@ -14,4 +14,3 @@ RUN gradle clean
 
 # Build the project using Gradle
 RUN gradle build
-
